@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>Portfólio</title>
+</head>
+
+<body>
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    <script>
+        $(window).on("load", function() {
+            $(".loader-wrapper").fadeOut("slow");
+        });
+    </script>
+
+    <header>
+        <div id="menu">
+            <div id="menu-bar" onclick="menuOnClick()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </div>
+            <nav class="nav" id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contato.html">Contact</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="menu-bg" id="menu-bg"></div>
+    </header>
+
+
+
+
+    <div class="container">
+        <div class="profile box">
+            <img class="profile-pic" src="profile.jpg" alt="Profile">
+            <h1 class="title">Igor Rocha</h1>
+            <span>Juiz de Fora, Brazil</span>
+            <p>Desenvolvedor de Sites e Jogos</p>
+
+        </div>
+        <div class="portfolio box">
+            <h1 class="title">Portfólio</h1>
+            <ul>
+                <li>
+                    <img src="1.jpg" alt="1">
+                    <div>
+                        <h2>Criação de Website</h2>
+                        <p>
+                            Minha criação de websites iniciou no ano passado (2020), e eu comecei nisso mais por causa do meu curso que por vontade. Contudo, o tempo foi passando, fui curtindo, despertando em mim o gosto, numa vontade crescente de praticar cada vez mais, em busca
+                            de aperfeiçoamento. Meu interesse despertou bem rápido. Já na segunda aula, fiz 3 sites, sendo que um deles pro maior colégio da minha cidade. É isso, agora sou apaixonado com HTML CSS e JS.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <img src="3.jpg" alt="2">
+                    <div>
+                        <h2>Criação de Jogos</h2>
+                        <p>
+                            Minha criação de jogos começou em 2018, quando eu só tinha 10 anos, kkkkkk. Entrei no meu curso com a vontade de criar jogos, para utilizar com meus amigos. A brincadeira acabou me fazendo sonhar em me tornar um designer de games. E assim, como no mundo
+                            de TI, as coisas vão surgindo e crescendo, e não param. Quero ser um desenvolvedor de jogos, sonho em fundar uma empresa e fazer dela a Maior, chegando a competir com Nintendo, Sony e etc. “Sonhar grande ou sonhar pequeno dá
+                            o mesmo trabalho…” Sigo confiante e me preparando, certo de que o futuro será promissor.
+                        </p>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+        <p class="copyright">© 2021 Igor Santiago Rocha</p>
+    </div>
+    <script src="menuhamburguer.js"></script>
+</body>
+
+</html>

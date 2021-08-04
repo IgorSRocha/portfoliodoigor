@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style2.css" />
+    <title>Projetos</title>
+</head>
+
+<body>
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    <script>
+        $(window).on("load", function() {
+            $(".loader-wrapper").fadeOut("slow");
+        });
+    </script>
+    <header>
+        <div id="menu">
+            <div id="menu-bar" onclick="menuOnClick()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </div>
+            <nav class="nav" id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contato.html">Contact</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="menu-bg" id="menu-bg"></div>
+    </header>
+
+    <div class="container">
+        <div class="portfolio box">
+            <h2 class="title">Meus Projetos</h2>
+            <ul>
+                <li>
+                    <img src="1.jpg" alt="1">
+                    <div>
+                        <h2>Meus Jogos</h2>
+                        <p>Os jogos que eu tenho publicados na internet, são somente no site chamado Scratch. Porém esses jogos são do caramba, segue os links abaixo para conferir-los!</conferir-los>
+                        </p>
+                        <br><a href="https://scratch.mit.edu/projects/239550748/">Clique aqui</a>
+                        <a href="https://scratch.mit.edu/projects/239550748/">Clique aqui</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="3.jpg" alt="2">
+                    <div>
+                        <h2>Criação de Jogos</h2>
+                        <p>
+                            Os meus sites, atualmente, só existe este publicado na internet. Se quiser conferir outros sites meus faça download deles <a href="https://drive.google.com/drive/folders/16wNSP588uNH66SC11s-sHCIPeiaFTHT0?usp=sharing">Aqui</a>                            ou veja as imagens deles <a href="imagens.html">Aqui</a>.
+                        </p>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <p class="copyright">© 2021 Igor Santiago Rocha</p>
+    <script src="menuhamburguer.js"></script>
+</body>
+
+</html>
